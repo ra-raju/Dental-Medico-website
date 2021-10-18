@@ -2,11 +2,13 @@ import {
   createUserWithEmailAndPassword,
   getAuth,
   GoogleAuthProvider,
+  onAuthStateChanged,
   signInWithEmailAndPassword,
   signInWithPopup,
+  signOut,
   updateProfile,
 } from 'firebase/auth';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import initializeAuthentication from '../Firebase/Firebase.init';
 
 initializeAuthentication();
@@ -73,12 +75,36 @@ const useFirebase = () => {
         setError(error.message);
       });
   };
+
+  //logout
+  const logOut = () => {
+    signOut(auth)
+      .then(() => {
+        // Sign-out successful.
+      })
+      .catch((error) => {
+        // An error happened.
+      });
+  };
+
+  //observer
+  useEffect(() => {
+    onAuthStateChanged(auth, (user) => {
+      if (user) {
+        setUser(user);
+        // ...
+      } else {
+        setUser({});
+      }
+    });
+  }, []);
   return {
     signUpUsingPassword,
     user,
     signInUsingGoogle,
     error,
     loginUsingPassword,
+    logOut,
   };
 };
 

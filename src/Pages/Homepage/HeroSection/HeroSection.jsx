@@ -8,7 +8,7 @@ const HeroSection = () => {
       <button className="hero-btn">
         get Apponintment{' '}
         <span>
-          <i class="fas fa-arrow-right arrow-icon"></i>
+          <i className="fas fa-arrow-right arrow-icon"></i>
         </span>
       </button>
     </div>
