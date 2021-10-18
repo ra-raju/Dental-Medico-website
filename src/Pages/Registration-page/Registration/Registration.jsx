@@ -1,14 +1,31 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { useForm } from 'react-hook-form';
 import { useHistory } from 'react-router';
+import useAuth from '../../../Hooks/useAuth';
 
 const Registration = () => {
+  const [name, setName] = useState('');
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
+
+  // use form from react hook form
   const {
     register,
     handleSubmit,
     formState: { errors },
   } = useForm();
-  const onSubmit = (data) => console.log(data);
+
+  // registration
+  const onSubmit = (data) => {
+    const { name, email, password } = data;
+    setName(name);
+    setEmail(email);
+    setPassword(password);
+  };
+
+  // use auth
+
+  const { signUpUsingPassword } = useAuth();
 
   // use history
 
@@ -48,7 +65,12 @@ const Registration = () => {
             <span className="text-muted">password is required</span>
           )}
 
-          <input type="submit" value="Registration" className="input-btn" />
+          <input
+            type="submit"
+            value="Registration"
+            className="input-btn"
+            onClick={() => signUpUsingPassword(name, email, password)}
+          />
         </form>
         <div className="other-login">
           <p onClick={gotoLogin} className="toggle">

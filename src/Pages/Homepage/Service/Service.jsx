@@ -13,8 +13,8 @@ const Service = (props) => {
             <Card.Title>{serviceName}</Card.Title>
             <Card.Text className="card-details">{serviceDetails}</Card.Text>
 
-            <footer className="">
-              <Button variant="primary">Go somewhere</Button>
+            <footer>
+              <Button variant="primary">Show Details</Button>
             </footer>
           </Card.Body>
         </Card>
