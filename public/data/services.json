@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "serviceName": "Root Carnals",
+    "serviceDetails": "A root canal is performed when the soft inner part of a tooth, known as the pulp, is injured or becomes inflamed or infected. ",
+    "img": "https://i.ibb.co/YDpNjYV/Root-Carnals.jpg"
+  },
+  {
+    "id": 2,
+    "serviceName": "Routine check-ups",
+    "serviceDetails": "Routine checkups can help you stay healthy. Your doctor has checked your overall health and may have suggested ways to take good care of yourself.",
+    "img": "https://i.ibb.co/7nP75Fd/checkup.jpg"
+  },
+  {
+    "id": 3,
+    "serviceName": "Teeth Whitening",
+    "serviceDetails": " long-lasting Teeth Whitening procedure — because we want you to glow with pride and confidence",
+    "img": "https://i.ibb.co/JsFRn6C/white-teeth.jpg"
+  },
+  {
+    "id": 4,
+    "serviceName": "Dental Fillings",
+    "serviceDetails": "A dental filling is performed to restore the size, shape, color shade and overall oral health of a tooth that is damaged by tooth decay",
+    "img": "https://i.ibb.co/QYYbq4y/filling.jpg"
+  },
+  {
+    "id": 5,
+    "serviceName": "Laser Treatments",
+    "serviceDetails": "Lasers are simply very arrow electromagnetic radiation with focused light beams, which help to make small changes in tissues depending upon the treatment.",
+    "img": "https://i.ibb.co/2jdfHcC/laser-treatment.jpg"
+  },
+  {
+    "id": 6,
+    "serviceName": "Clips & Braces",
+    "serviceDetails": "Braces work by putting pressure on your teeth over a period of time to slowly move them in a specific direction. The bone under them changes shape, too.",
+    "img": "https://i.ibb.co/pfz9kLb/Orthodontic-Treatment-Dental-Care-Concept-Beautiful-Woman-Healthy-Smile-close-up-Closeup-Ceramic-and.jpg"
+  }
+]
