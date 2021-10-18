@@ -1,16 +1,25 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { useForm } from 'react-hook-form';
 import { useHistory } from 'react-router';
+import useAuth from '../../../Hooks/useAuth';
 import './Login.css';
 
 const Login = () => {
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
   const {
     register,
     handleSubmit,
     formState: { errors },
   } = useForm();
-  const onSubmit = (data) => console.log(data);
+  const onSubmit = (data) => {
+    const { email, password } = data;
+    setEmail(email);
+    setPassword(password);
+  };
 
+  // useAuth
+  const { signInUsingGoogle, loginUsingPassword } = useAuth();
   // use history
   const history = useHistory();
   const gotoRegistration = () => {
@@ -41,20 +50,25 @@ const Login = () => {
             <span className="text-muted">password is required</span>
           )}
 
-          <input type="submit" value="login" className="input-btn" />
+          <input
+            type="submit"
+            value="login"
+            className="input-btn"
+            onClick={() => loginUsingPassword(email, password)}
+          />
         </form>
         <div className="other-login">
           <p>
             login with{' '}
-            <span className="google-logo">
-              <i class="fab fa-google"></i>
+            <span className="google-logo" onClick={signInUsingGoogle}>
+              <i className="fab fa-google"></i>
             </span>
           </p>
         </div>
         <p onClick={gotoRegistration} className="toggle">
           create new account{' '}
           <span>
-            <i class="fas fa-arrow-right arrow-icon"></i>
+            <i className="fas fa-arrow-right arrow-icon"></i>
           </span>
         </p>
       </div>
