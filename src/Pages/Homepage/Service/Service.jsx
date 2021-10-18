@@ -1,4 +1,4 @@
-/* import React from 'react';
+import React from 'react';
 import { Button, Card, Col } from 'react-bootstrap';
 import './Service.css';
 
@@ -24,4 +24,3 @@ const Service = (props) => {
 };
 
 export default Service;
- */
