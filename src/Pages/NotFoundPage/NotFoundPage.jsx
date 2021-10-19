@@ -1,7 +1,6 @@
 import React from 'react';
 import { Button } from 'react-bootstrap';
 import { useHistory } from 'react-router';
-import notFoundImg from '../../image/404.jpg';
 import './NotFoundPage.css';
 
 const NotFoundPage = () => {
@@ -12,7 +11,7 @@ const NotFoundPage = () => {
   };
   return (
     <div className="notfound-section">
-      <img src={notFoundImg} alt="" className="notFoundImg" />
+      <img src="./image/404.jpg" alt="" className="notFoundImg" />
       <Button
         variant="primary"
         className="notfound-btn"

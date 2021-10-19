@@ -1,16 +1,47 @@
 import React from 'react';
-import heroImg from '../../../image/hero.png';
+import { Carousel } from 'react-bootstrap';
 import './HeroSection.css';
+
 const HeroSection = () => {
   return (
     <div className="hero-section">
-      <img className="hero-img" src={heroImg} alt="" />
-      <button className="hero-btn">
-        get Apponintment{' '}
-        <span>
-          <i className="fas fa-arrow-right arrow-icon"></i>
-        </span>
-      </button>
+      <Carousel fade className="slider">
+        <Carousel.Item>
+          <img
+            className="d-block w-100 slider-img"
+            src="./image/slide1-min.jpg"
+            alt="First slide"
+          />
+        </Carousel.Item>
+        <Carousel.Item>
+          <img
+            className="d-block w-100"
+            src="./image/slide2-min.jpg"
+            alt="First slide"
+          />
+        </Carousel.Item>
+        <Carousel.Item>
+          <img
+            className="d-block w-100"
+            src="./image/slide3-min.jpg"
+            alt="First slide"
+          />
+        </Carousel.Item>
+        <Carousel.Item>
+          <img
+            className="d-block w-100"
+            src="./image/slide4-min.jpg"
+            alt="Second slide"
+          />
+        </Carousel.Item>
+        <Carousel.Item>
+          <img
+            className="d-block w-100"
+            src="./image/slide5-min.jpg"
+            alt="Third slide"
+          />
+        </Carousel.Item>
+      </Carousel>
     </div>
   );
 };
