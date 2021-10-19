@@ -17,6 +17,7 @@ const useFirebase = () => {
   const [user, setUser] = useState({});
   const [error, setError] = useState('');
   const [isLoading, setIsLoading] = useState(true);
+  const [success, setSuccess] = useState('');
 
   const auth = getAuth();
 
@@ -29,7 +30,8 @@ const useFirebase = () => {
       .then((result) => {
         setUser(result.user);
         updateUserName(name);
-        console.log(result.user);
+        setError('');
+        setSuccess('You Registared Successfully');
       })
       .catch((error) => {
         setError(error.message);
@@ -58,7 +60,8 @@ const useFirebase = () => {
     signInWithEmailAndPassword(auth, email, password)
       .then((result) => {
         setUser(result.user);
-        console.log(result.user);
+        setSuccess('You Login Successfully');
+        setError('');
       })
       .catch((error) => {
         setError(error.message);
@@ -73,7 +76,8 @@ const useFirebase = () => {
     signInWithPopup(auth, googleProvider)
       .then((result) => {
         setUser(result.user);
-        console.log(result.user);
+        setSuccess('You Login Successfully');
+        setError('');
       })
       .catch((error) => {
         setError(error.message);
@@ -87,6 +91,7 @@ const useFirebase = () => {
     signOut(auth)
       .then(() => {
         // Sign-out successful.
+        setUser({});
       })
       .catch((error) => {
         // An error happened.
@@ -114,6 +119,7 @@ const useFirebase = () => {
     loginUsingPassword,
     logOut,
     isLoading,
+    success,
   };
 };
 

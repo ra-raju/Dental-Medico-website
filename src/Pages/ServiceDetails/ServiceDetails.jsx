@@ -5,7 +5,6 @@ import './ServiceDetails.css';
 
 const ServiceDetails = () => {
   const { id } = useParams();
-  // console.log(id);
 
   const [services, setServices] = useState([]);
   const [singleService, setSignleService] = useState({});
@@ -20,7 +19,7 @@ const ServiceDetails = () => {
     const matchedService = services.find(
       (service) => service.id === parseInt(id)
     );
-    console.log(matchedService);
+
     setSignleService(matchedService);
   }, [services]);
 

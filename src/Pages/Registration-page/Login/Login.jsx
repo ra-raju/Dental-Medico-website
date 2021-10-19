@@ -7,6 +7,7 @@ import './Login.css';
 const Login = () => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
+  // use form hook
   const {
     register,
     handleSubmit,
@@ -19,7 +20,7 @@ const Login = () => {
   };
 
   // useAuth
-  const { signInUsingGoogle, loginUsingPassword, error } = useAuth();
+  const { signInUsingGoogle, loginUsingPassword, error, success } = useAuth();
   // use history
   const history = useHistory();
   const gotoRegistration = () => {
@@ -58,6 +59,7 @@ const Login = () => {
           />
           <br />
           <b>{error}</b>
+          <b>{success}</b>
         </form>
         <div className="other-login">
           <p>
