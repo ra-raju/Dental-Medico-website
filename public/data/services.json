@@ -3,36 +3,42 @@
     "id": 1,
     "serviceName": "Root Carnals",
     "serviceDetails": "A root canal is performed when the soft inner part of a tooth, known as the pulp, is injured or becomes inflamed or infected. ",
+    "serviceDescription": "Root canal treatment is designed to eliminate bacteria from the infected root canal, prevent reinfection of the tooth and save the natural tooth. When one undergoes a root canal, the inflamed or infected pulp is removed and the inside of the tooth is carefully cleaned and disinfected, then filled and sealed.A modern root canal treatment is nothing like those old sayings! It’s very similar to a routine filling and can usually be completed in one or two appointments, depending on the condition of your tooth and your personal circumstances. Getting a root canal is relatively painless and extremely effective. You’ll be back to smiling, biting and chewing with ease in no time.",
     "img": "https://i.ibb.co/YDpNjYV/Root-Carnals.jpg"
   },
   {
     "id": 2,
     "serviceName": "Routine check-ups",
     "serviceDetails": "Routine checkups can help you stay healthy. Your doctor has checked your overall health and may have suggested ways to take good care of yourself.",
+    "serviceDescription": "It’s better to prevent an illness than to have to treat it. That’s why regular checkups are essential.Routinely evaluating your risk factors for various medical conditions, screening for cancer and other diseases, and assessing your lifestyle habits helps you stay healthy while reducing your risk of chronic or life threatening diseases.Keep reading to learn more about the benefits of regular checkups with your doctor, how often you should get one, how to prepare for one, and whether they’re covered by insurance.",
     "img": "https://i.ibb.co/7nP75Fd/checkup.jpg"
   },
   {
     "id": 3,
     "serviceName": "Teeth Whitening",
     "serviceDetails": " long-lasting Teeth Whitening procedure — because we want you to glow with pride and confidence",
+    "serviceDescription": "Many times teeth are beautifully shaped, but are with dark color. Bleaching is the perfect solution to get a brighter & whiter smile. Many times, your Natural Teeth Whitening will be a part of a comprehensive plan to bring your smile back to life. Dr. Shihabur Rahman usually recommends Teeth Whitening treatment before any Cosmetic dental treatment.Like all other cosmetic treatments, Teeth Whitening is also not permanent. The performance depends on the quality of material used and after care maintenance by you. The frequency of coffee consumption, smoking, alcohol consumption and many other factors are related directly.",
     "img": "https://i.ibb.co/JsFRn6C/white-teeth.jpg"
   },
   {
     "id": 4,
     "serviceName": "Dental Fillings",
     "serviceDetails": "A dental filling is performed to restore the size, shape, color shade and overall oral health of a tooth that is damaged by tooth decay",
+    "serviceDescription": "Amalgam fillings are silver coloured. They are made by combining mercury and a silver alloy (50% mercury, 35% silver, and 15% tin, copper and other metals). Amalgam is long lasting and hard wearing and has been used in fillings for at least 150 years. It is economical to use and it is not unusual for an amalgam filling to last 15 to 20 years.This kind of filling is usually used on the back 'chewing' teeth. Before the filling can be placed, the dentist must prepare the area by removing all the decay and shaping the cavity to hold the filling in place. If the tooth is badly broken, your dentist may need to place a small stainless steel pin to help secure the filling.",
     "img": "https://i.ibb.co/QYYbq4y/filling.jpg"
   },
   {
     "id": 5,
     "serviceName": "Laser Treatments",
     "serviceDetails": "Lasers are simply very arrow electromagnetic radiation with focused light beams, which help to make small changes in tissues depending upon the treatment.",
+    "serviceDescription": "So what exactly is laser dentistry? The term simply refers to when a dentist uses a laser when treating their patients. A dental laser uses a very thin yet powerful beam of light energy to address any dental issues. Because the laser virtually eliminates any heat, pressure or vibrations, the dental patient will experience a substantial amount of lesser pain or even no pain at all. For example, using a laser means that there is no longer a need for anesthesia when getting a cavity filled.When a dentist decides to use lasers during their dental procedures, they are using one of the newest and best dental technologies available today. Dental laser technology is not only very safe and very effective, it is also highly versatile as it can be used in a variety of dental procedures.",
     "img": "https://i.ibb.co/2jdfHcC/laser-treatment.jpg"
   },
   {
     "id": 6,
     "serviceName": "Clips & Braces",
     "serviceDetails": "Braces work by putting pressure on your teeth over a period of time to slowly move them in a specific direction. The bone under them changes shape, too.",
+    "serviceDescription": "Orthodontic services may be provided by any licensed dentist trained in orthodontics. In North America most orthodontic treatment is done by orthodontists, who are dentists in diagnosis and treatment of malocclusions—malalignments of the teeth, jaws, or both. A dentist must complete 2–3 years of additional post-doctoral training to earn a specialty certificate in orthodontics. There are many general practitioners who also provide orthodontic services.The first step is to determine whether braces are suitable for the patient. The doctor consults with the patient and inspects the teeth visually. If braces are appropriate, a records appointment is set up where X-rays, molds, and impressions are made. These records are analyzed to determine the problems and the proper course of action. The use of digital models is rapidly increasing in the orthodontic industry. Digital treatment starts with the creation of a three-dimensional digital model of the patient's arches. This model is produced by laser-scanning plaster models created using dental impressions. Computer-automated treatment simulation has the ability to automatically separate the gums and teeth from one another and can handle malocclusions well; this software enables clinicians to ensure, in a virtual setting, that the selected treatment will produce the optimal outcome, with minimal user input.[medical citation needed]Typical treatment times vary from six months to two and a half years depending on the complexity and types of problems. Orthognathic surgery may be required in extreme cases. About 2 weeks before the braces are applied, orthodontic spacers may be required to spread apart back teeth in order to create enough space for the bands.",
     "img": "https://i.ibb.co/pfz9kLb/Orthodontic-Treatment-Dental-Care-Concept-Beautiful-Woman-Healthy-Smile-close-up-Closeup-Ceramic-and.jpg"
   }
 ]

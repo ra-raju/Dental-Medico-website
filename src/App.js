@@ -2,9 +2,9 @@ import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import './App.css';
 import AuthProvider from './Context/AuthProvider';
 import Home from './Pages/Homepage/Home/Home';
-import Services from './Pages/Homepage/Services/Services';
 import Login from './Pages/Registration-page/Login/Login';
 import Registration from './Pages/Registration-page/Registration/Registration';
+import ServiceDetails from './Pages/ServiceDetails/ServiceDetails';
 import Header from './Pages/Shared-page/Header/Header';
 
 function App() {
@@ -20,9 +20,10 @@ function App() {
             <Route path="/home">
               <Home />
             </Route>
-            <Route path="/service">
-              <Services />
+            <Route path="/services/details/:id">
+              <ServiceDetails />
             </Route>
+
             <Route path="/login">
               <Login />
             </Route>
