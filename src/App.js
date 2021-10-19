@@ -10,6 +10,7 @@ import PrivateRoute from './Pages/PrivateRoute/PrivateRoute';
 import Login from './Pages/Registration-page/Login/Login';
 import Registration from './Pages/Registration-page/Registration/Registration';
 import ServiceDetails from './Pages/ServiceDetails/ServiceDetails';
+import Footer from './Pages/Shared-page/Footer/Footer';
 import Header from './Pages/Shared-page/Header/Header';
 
 function App() {
@@ -49,6 +50,7 @@ function App() {
               <NotFoundPage />
             </Route>
           </Switch>
+          <Footer />
         </BrowserRouter>
       </AuthProvider>
     </div>
