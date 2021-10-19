@@ -19,7 +19,7 @@ const Login = () => {
   };
 
   // useAuth
-  const { signInUsingGoogle, loginUsingPassword } = useAuth();
+  const { signInUsingGoogle, loginUsingPassword, error } = useAuth();
   // use history
   const history = useHistory();
   const gotoRegistration = () => {
@@ -56,6 +56,8 @@ const Login = () => {
             className="input-btn"
             onClick={() => loginUsingPassword(email, password)}
           />
+          <br />
+          <b>{error}</b>
         </form>
         <div className="other-login">
           <p>
