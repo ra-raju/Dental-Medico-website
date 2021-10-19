@@ -2,6 +2,7 @@ import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import './App.css';
 import AuthProvider from './Context/AuthProvider';
 import Home from './Pages/Homepage/Home/Home';
+import NotFoundPage from './Pages/NotFoundPage/NotFoundPage';
 import Login from './Pages/Registration-page/Login/Login';
 import Registration from './Pages/Registration-page/Registration/Registration';
 import ServiceDetails from './Pages/ServiceDetails/ServiceDetails';
@@ -29,6 +30,9 @@ function App() {
             </Route>
             <Route path="/registration">
               <Registration />
+            </Route>
+            <Route path="*">
+              <NotFoundPage />
             </Route>
           </Switch>
         </BrowserRouter>
